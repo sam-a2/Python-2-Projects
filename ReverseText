@@ -1,0 +1,12 @@
+#A function that reverses text
+
+def reverse(text):
+    word = ""
+    l = len(text) - 1
+    while l >= 0:
+        word = word + text[l]
+        l -= 1
+    return word
+
+
+print reverse("It is sunny outside today")

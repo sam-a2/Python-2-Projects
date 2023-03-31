@@ -1,0 +1,16 @@
+#A function that censors a word within a sentence
+
+def censor(text, word):
+    words = text.split()
+    result = ''
+    stars = '*' * len(word)
+    count = 0
+    for i in words:
+        if i == word:
+            words[count] = stars
+        count += 1
+    result =' '.join(words)
+
+    return result
+
+print censor ("Apples have been the bane of my existence ever since I discovered I was allergic.", "Apples")
